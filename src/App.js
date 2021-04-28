@@ -5,7 +5,7 @@ import HomePage from "./pages/home/home-page.component";
 import ShopPage from "./pages/shop/shop-page.component";
 import Header from "./components/header/header.component";
 import SignInAndSignOutPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up-page.component";
-import Checkout from "./pages/checkout/checkout.component";
+import CheckoutPage from "./pages/checkout/checkout-page.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -43,7 +43,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
-          <Route exact path="/checkout" component={Checkout} />
+          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
             path="/signin"
