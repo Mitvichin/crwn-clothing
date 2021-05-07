@@ -26,6 +26,10 @@ export const MenuItem = styled.div`
   }
 
   ${getSize}
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+  }
 `;
 
 export const BackgroudImage = styled.div`

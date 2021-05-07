@@ -8,6 +8,10 @@ export const CollectionItem = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
+  }
 `;
 
 export const Image = styled.div`
@@ -19,6 +23,10 @@ export const Image = styled.div`
 
   ${CollectionItem}:hover & {
     opacity: 0.8;
+
+    @media screen and (max-width: 800px) {
+      opacity: unset;
+    }
   }
 `;
 
@@ -29,9 +37,20 @@ export const CustomBtn = styled(CustomButton)`
   top: 255px;
   display: none;
 
+  @media screen and (max-width: 800px) {
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
+  }
+
   ${CollectionItem}:hover & {
     opacity: 0.85;
     display: flex;
+
+    @media screen and (max-width: 800px) {
+      opacity: unset;
+    }
   }
 `;
 
